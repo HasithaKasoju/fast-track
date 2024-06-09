@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Route Path based on Marker Insertion Order</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fast-Track</h1>
+    <div id="map-container">
+    <div id="map"></div>
+    <div class="input-container">
+        <input type="text" id="address-input" placeholder="Enter address" />
+        <button id="add-address-button" >Add Address</button>
+    </div>
+    <div>
+        <button id="reset-button" onclick="resetApplication()">Reset Application</button>
+    </div>
+    <ul id="point-list"></ul>
+    <button id="finish-button">Finish Route</button>
+    <div id="optimized-route-container">
+    <!-- <div id="displayButton" onclick="displayWaypoints()">Display Optimized Points</div> -->
+    <h2>Optimized Route:</h2>
+    <ul id="optimized-route-list"></ul>
+    <button id="tsp-button">Optimize Route (TSP)</button>
+    
+</div>
+</div>
+    <!-- <div id="waypointsList"></div> -->
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
